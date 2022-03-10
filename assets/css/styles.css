@@ -100,6 +100,28 @@ footer ul {
     color: rgb(82, 82, 93);
 }
 
+.socialicons {
+    padding-top: 50px;
+}
+
+.socialicons img {
+    height: 200px;
+    width: 200px;
+}
+
+.socialicons ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.socialicons a {
+    padding: 7px 7px;
+}
+
+.socialicons svg {
+    fill: white;
+}
+
 
 /* Tablet menu */
 
@@ -146,6 +168,9 @@ footer ul {
     .footer-nav {
         display: inline;
     }
+    .socialicons {
+        display: inline;
+    }
 }
 
 
@@ -175,6 +200,11 @@ footer ul {
         padding-right: 0;
     }
     .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .socialicons {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
