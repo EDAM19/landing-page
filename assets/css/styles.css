@@ -17,8 +17,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+nav li:hover {
+    border-bottom: 4px solid #006d6d;
+}
+
+.logo:hover {
+    border-bottom: 0;
 }
 
 .logo img {
@@ -37,6 +41,10 @@ a:hover {
 
 .button.secondary {
     border-bottom: 1px #444 solid;
+}
+
+.button.primary {
+    border-bottom: 0px;
 }
 
 
@@ -67,6 +75,29 @@ a:hover {
 
 .item.active {
     display: block;
+}
+
+footer {
+    background-color: black;
+    padding: 64px 127px;
+    height: auto;
+}
+
+footer li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    padding-right: 25px;
+}
+
+.footer-item {
+    list-style-type: none;
+}
+
+.footer-item.title {
+    color: rgb(82, 82, 93);
 }
 
 
@@ -112,6 +143,9 @@ a:hover {
     .button.secondary a:hover {
         color: #ddd;
     }
+    .footer-nav {
+        display: inline;
+    }
 }
 
 
@@ -139,5 +173,10 @@ a:hover {
     }
     .menu li.button {
         padding-right: 0;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
