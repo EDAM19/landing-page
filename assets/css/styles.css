@@ -47,9 +47,6 @@ nav li:hover {
     border-bottom: 0px;
 }
 
-
-/* Mobile menu */
-
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +176,8 @@ footer ul {
 }
 
 .product-header__img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     width: 100%;
     max-height: 260px;
 }
@@ -200,8 +199,41 @@ footer ul {
     padding: 10px 10px;
 }
 
+.gallery-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-/* Tablet menu */
+.gallery-body {
+    background-image: url('../../assets/images/videogames.png');
+    width: 100%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.gallery-body__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.gallery-body__container img {
+    border-radius: 6px;
+    background-color: white;
+    width: 320px;
+    height: 210px;
+}
+
+.gallery-body__container img:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+}
 
 @media (min-width: 600px) {
     .menu {
@@ -297,12 +329,19 @@ footer ul {
     .product-body {
         padding: 10px 10px;
     }
+    .gallery-left {
+        font-size: 28px;
+    }
+    .gallery-body__container img {
+        border-radius: 6px;
+        background-color: white;
+        width: 600px;
+        height: 338px;
+    }
 }
 
-
-/* Desktop menu */
-
 @media (min-width: 900px) {
+    /* Menu */
     .item {
         display: block;
         width: auto;
@@ -325,6 +364,7 @@ footer ul {
     .menu li.button {
         padding-right: 0;
     }
+    /* Footer */
     .footer-nav {
         display: flex;
         flex-direction: row;
@@ -335,6 +375,7 @@ footer ul {
         flex-direction: row;
         justify-content: space-between;
     }
+    /* Header */
     .hero-image {
         display: flex;
         justify-content: flex-end;
@@ -370,6 +411,7 @@ footer ul {
         color: white;
         font-size: 15px;
     }
+    /* Services */
     .services {
         height: 744px;
         padding: 120px 10%;
@@ -392,5 +434,36 @@ footer ul {
     }
     .product-body {
         padding: 10px 10px;
+    }
+    /* Gallery */
+    .gallery {
+        box-sizing: border-box;
+        height: 744px;
+        padding: 100px 5%;
+    }
+    .gallery-left {
+        width: 25%;
+        height: 544px;
+        float: left;
+    }
+    .gallery-header {
+        float: left;
+        text-align: center;
+    }
+    .gallery-body {
+        width: 75%;
+        float: left;
+        height: 544px;
+        padding: 0;
+    }
+    .gallery-body__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .gallery-body__container img {
+        border-radius: 6px;
+        background-color: white;
+        width: 350px;
+        height: 260px;
     }
 }
