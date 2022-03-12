@@ -132,7 +132,7 @@ footer ul {
 }
 
 .hero-text {
-    position: absolute;
+    position: relative;
     top: 20%;
     font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
     font-size: 32px;
@@ -288,7 +288,7 @@ footer ul {
         height: 644px;
     }
     .hero-text {
-        position: absolute;
+        position: relative;
         top: 20%;
         font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
         font-size: 52px;
